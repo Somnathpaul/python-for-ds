@@ -53,3 +53,10 @@ for x in lang:
 # check if the item is present in the list
 if 'node' in lang:
     print("true")
+
+# sort
+lang.sort()
+print(lang)
+
+lang.sort(reverse=True)
+print(lang)
