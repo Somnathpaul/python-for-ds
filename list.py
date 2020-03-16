@@ -58,5 +58,6 @@ if 'node' in lang:
 lang.sort()
 print(lang)
 
+# sort in decending order
 lang.sort(reverse=True)
 print(lang)
