@@ -1,17 +1,32 @@
-# binary search tree 
+# binary search tree
 class Node(object):
-    def init (self, value):
+    def __init__(self, value):
         self.value = value
         self.left = None
         self.right = None
-    
+
+
 class BST(object):
-    def init (self, root):
+    def __init__(self, root):
         self.root = Node(root)
-    
-    def pre_Order (self, start, traversal):
-        # root -> left -> right
-        
+
+    def print(self, traversal_type):
+        if traversal_type == "preOrder":
+            return self.pre_Order(tree.root, "")
+        else:
+            print("traversal not supported")
+            return False
+
+    def pre_Order(self, start, traversal):
+        """start : will store the updated root
+        traversal : will store the string and print out at last
+        depth first search : root -> left -> right"""
+        if start:
+            traversal += (str(start.value) + "-")
+            traversal = self.pre_Order(start.left, traversal)
+            traversal = self.pre_Order(start.right, traversal)
+        return traversal
+
 
 #                1
 #              /   \
@@ -32,4 +47,5 @@ tree.root.right.right = Node(7)
 # three ways to search : pre order, post order , in order
 # two ways to implement : depth first , breadth first
 
+print(tree.print("preOrder"))
 
