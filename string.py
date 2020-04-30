@@ -6,5 +6,5 @@ find2 = data.find('<', find1)
 print(find2)
 
 # slicing
-domain  = data[find1+2 : find2-1]
+domain  = data[find1+2 : ]
 print(domain)
