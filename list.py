@@ -1,5 +1,6 @@
 # List is a collection which is ordered and changeable. Allows duplicate members.
 # It is similar to arrays
+# list can include another list inside it
 
 num1 = [0,1,2,3,4,3,6,0]
 num2 = [1,9,3,5,2,7,2,9]
