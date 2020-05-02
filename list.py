@@ -11,6 +11,9 @@ lang = ['python', 'java', 'js', 'ruby', 'php']
 # print values with index numbers: always starting from 0
 print(lang[0])
 
+# range function: starts counting from 0
+print('range :',range(len(lang)))
+
 # print the length of the list
 print(len(lang)) # expected 5
 
