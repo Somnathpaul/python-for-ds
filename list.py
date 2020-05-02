@@ -4,6 +4,7 @@
 
 num1 = [0,1,2,3,4,3,6,0]
 num2 = [1,9,3,5,2,7,2,9]
+str1 = "Hello python 3"
 
 # print(num1, num2)
 
@@ -13,6 +14,10 @@ print(lang[0])
 
 # range function: starts counting from 0
 print('range :',range(len(lang)))
+
+# split function on list
+strlist = str1.split()
+print('splitting sentence into a list: ',strlist)
 
 # print the length of the list
 print(len(lang)) # expected 5
@@ -65,3 +70,9 @@ print(lang)
 # sort in decending order
 lang.sort(reverse=True)
 print(lang)
+
+# spliti9ng a real world email
+email = "from:	Deeksha Chaturvedi <deeksha.chaturvedi@generalassemb.ly>"
+
+splitdata = email.split()
+print(splitdata)
