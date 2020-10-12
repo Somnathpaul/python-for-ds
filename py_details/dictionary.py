@@ -19,8 +19,9 @@ print(di)
 '''
 
 
-######### example ###############
+################## example ##################
 # converting two list into a dictionary 
+print("Top 12 websites with highest visited : ")
 company=['google.com', 'youtube.com', 'tmall.com', 'baidu.com', 'qq.com', 'facebook.com', 'sohu.com', 'taobao.com', '360.cn', 'jd.com', 'yahoo.com','amazon.com']
 company_number = [i+1 for i in range(0,len(company))]
 #print(company_number)
